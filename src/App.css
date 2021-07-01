@@ -1,0 +1,18 @@
+.app {
+  @apply h-screen text-center flex flex-col justify-evenly;
+  background-color: rgb(146, 236, 116);
+}
+.unordered__list {
+  @apply bg-blue-500 w-72 mx-auto px-8 py-5 mt-10 rounded;
+}
+.list__item {
+  @apply mt-5 py-2 px-3 mx-auto rounded-lg relative flex items-center text-base shadow-lg text-black;
+  background-color: rgb(255, 0, 242);
+}
+.close__icon {
+  @apply float-right absolute right-2 opacity-0 bg-red-500 p-2 rounded;
+}
+
+.list__item:hover .close__icon {
+  @apply opacity-100 transition duration-700;
+}
